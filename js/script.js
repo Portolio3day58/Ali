@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoader', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
 
 const cartWrapper = document.querySelector('.cart__wrapper'),
