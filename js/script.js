@@ -29,6 +29,8 @@ goodsBtn.forEach(function(btn, i){
 			removeBtn = document.createElement('div'),
 			empty = cartWrapper.querySelector('.empty');
 			
-			
+		trigger.remove();
+		
+		removeBtn.classList.add('goods__item-remove');
 	});
 });
