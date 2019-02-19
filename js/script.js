@@ -19,3 +19,5 @@ function closeCart() {
 	document.bode.style.overflow = '';
 	
 }
+openCart();
+closeCart();
