@@ -21,3 +21,14 @@ function closeCart() {
 
 open.addEventListener('click', openCart);
 close.addEventListener('click', closeCart);
+
+goodsBtn.forEach(function(btn, i){
+	btn.addEventListener('click', () => {
+		let item = products[i].cloneNode(true),
+			trigger = item.querySelector('button'),
+			removeBtn = document.createElement('div'),
+			empty = cartWrapper.querySelector('.empty');
+			
+			
+	});
+});
