@@ -20,4 +20,4 @@ function closeCart() {
 }
 
 open.addEventListener('click', openCart);
-close.addEventListener('click', closCart);
+close.addEventListener('click', closeCart);
