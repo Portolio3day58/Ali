@@ -34,5 +34,11 @@ goodsBtn.forEach(function(btn, i){
 		removeBtn.classList.add('goods__item-remove');
 		removeBtn.innerHTML = '&times';
 		item.appendChild(removeBtn);
+		
+		cartWrapper.appendChild(item);
+		if (empty) {
+			empty.remove();
+		}
+		
 	});
 });
