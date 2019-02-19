@@ -16,7 +16,7 @@ function openCart() {
 
 function closeCart() {
 	cart.style.display = 'none';
-	document.bode.style.overflow = '';
+	document.body.style.overflow = '';
 }
 
 open.addEventListener('click', openCart);
