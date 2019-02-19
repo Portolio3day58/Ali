@@ -11,4 +11,11 @@ const cartWrapper = document.querySelector('.cart__wrapper'),
 	
 function openCart() {
 	cart.style.display = 'block';
+	document.bode.style.overflow = 'hidden';
+	
+}
+function closeCart() {
+	cart.style.display = 'none';
+	document.bode.style.overflow = '';
+	
 }
