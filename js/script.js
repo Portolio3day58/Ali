@@ -8,3 +8,7 @@ const cartWrapper = document.querySelector('.cart__wrapper'),
 	badge= document.querySelector('.nav__bage'),
 	totalCost = document.querySelector('.cart__total > span'),
 	titles = document.querySelectorAll('.doods__title');
+	
+function openCart() {
+	cart.style.display = 'block';
+}
