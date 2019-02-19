@@ -32,5 +32,7 @@ goodsBtn.forEach(function(btn, i){
 		trigger.remove();
 		
 		removeBtn.classList.add('goods__item-remove');
+		removeBtn.innerHTML = '&times';
+		item.appendChild(removeBtn);
 	});
 });
