@@ -14,7 +14,7 @@ const cartWrapper = document.querySelector('.cart__wrapper'),
 	
 function openCart() {
 	cart.style.display = 'block';
-	document.bode.style.overflow = 'hidden';
+	document.body.style.overflow = 'hidden';
 }
 
 function closeCart() {
