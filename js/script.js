@@ -57,7 +57,9 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
 	sliceTitle();
+    calcGoods();
 
 	function showConfirm() {
 		confirm.style.display = 'block';
@@ -77,5 +79,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 	//serInterval(sliceTitle, 100)
     //serTimeout(sliceTitle, 100)
-	
+	function calcGoods() {
+		const items = cartWrapper.querySelectorAll('.goods__item');
+		badge.textContent = items.length;
+    }
 });
