@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger.remove();
 
            showConfirm();
-            calcGoods(1);
+
 
 			removeBtn.classList.add('goods__item-remove');
 			removeBtn.innerHTML = '&times';
@@ -47,6 +47,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 
 		});
+		
+        calcGoods(1);
 	});
 
 	function sliceTitle() {
