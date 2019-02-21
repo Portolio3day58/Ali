@@ -69,8 +69,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 confirm.style.display = 'none';
             } else {
                 counter--;
-                confirm.style.transform = `translateY(-${counter}px)`;
                 confirm.style.opacity = '.' + counter;
+                confirm.style.transform = `translateY(-${counter}px)`;
+
             }
         }
     }
