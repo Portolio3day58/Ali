@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	function sliceTitle() {
+	function sliceTitl() {
         titles.forEach(function(item) {
             if (item.textContent.length < 70) {
                 return;
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-	sliceTitle();
+	sliceTitl();
 
 	function showConfirm() {
 		confirm.style.display = 'block';
