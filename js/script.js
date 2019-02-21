@@ -62,11 +62,22 @@ window.addEventListener('DOMContentLoaded', () => {
 	function showConfirm() {
 		confirm.style.display = 'block';
 		let counter = 100;
+		const id = setInterval(frame, 10);
+		function frame() {
+			if (counter == 10) {
+				clearInterval(id);
+                confirm.style.display = 'none';
+            } else {
+                counter--;
+                confirm.style.transform = `traslateY(-${counter}px)`;
+                confirm.style.opacity = '.' + counter;
+            }
+        }
     }
 	//serInterval(sliceTitle, 100)
     //serTimeout(sliceTitle, 100)
 
 
-	
+
 
 });
