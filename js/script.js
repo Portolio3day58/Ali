@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	open.addEventListener('click', openCart);
 	close.addEventListener('click', closeCart);
 
-	goodsBtn.forEach(function(btn, i) {
+	goodsBtn.forEach(function (btn, i) {
 		btn.addEventListener('click', () => {
 			let item = products[i].cloneNode(true),
 				trigger = item.querySelector('button'),
@@ -82,13 +82,22 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-	//serInterval(sliceTitle, 100)
-    //serTimeout(sliceTitle, 100)
+
+
 	function calcGoods(i) {
+
 		const items = cartWrapper.querySelectorAll('.goods__item');
 		badge.textContent = i + items.length;
+
     }
 
+	function calcTotal() {
+		const prices = document.querySelectorAll('.cart__wrapper > .goods__tem > .goods__price > span');
+    	let total = 0;
+    	prices.forEach(function (item) {
+			total += +item.textContent;
+        });
+	}
 
 
 
