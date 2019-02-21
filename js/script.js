@@ -77,8 +77,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 	//serInterval(sliceTitle, 100)
     //serTimeout(sliceTitle, 100)
-
-
-
-
+	
 });
