@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		confirm = document.querySelector('.confirm'),
 		badge= document.querySelector('.nav__bage'),
 		totalCost = document.querySelector('.cart__total > span'),
-		titles = document.querySelectorAll('.doods__title');
+		titles = document.querySelectorAll('.goods__title');
 
 	function openCart() {
 		cart.style.display = 'block';
@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	function sliceTitl() {
+	function sliceTitle() {
         titles.forEach(function(item) {
             if (item.textContent.length < 70) {
                 return;
@@ -57,13 +57,14 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-	sliceTitl();
+	sliceTitle();
 
 	function showConfirm() {
 		confirm.style.display = 'block';
+		let counter = 100;
     }
-
-
+	//serInterval(sliceTitle, 100)
+    //serTimeout(sliceTitle, 100)
 
 
 
