@@ -86,4 +86,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		const items = cartWrapper.querySelectorAll('.goods__item');
 		badge.textContent = i + items.length;
     }
+
+
+
+
+
 });
