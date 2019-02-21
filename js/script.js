@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	function sliceTitle() {
-        titles.forEach(function (item) {
+        titles.forEach(function(item) {
             if (item.textContent.length < 70) {
                 return;
             } else {
@@ -59,6 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 	sliceTitle();
 
+	
 
 
 
