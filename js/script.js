@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger.remove();
 
            showConfirm();
-            calGoods(1);
+            calcGoods();
 
 			removeBtn.classList.add('goods__item-remove');
 			removeBtn.innerHTML = '&times';
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 	//serInterval(sliceTitle, 100)
     //serTimeout(sliceTitle, 100)
-	function calGoods(i) {
+	function calcGoods(i) {
 		const items = cartWrapper.querySelectorAll('.goods__item');
 		badge.textContent = i + items.length;
     }
