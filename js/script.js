@@ -59,7 +59,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 	sliceTitle();
 
-
+	function showConfirm() {
+		confirm.style.display = 'block';
+    }
 
 
 
