@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			if (empty) {
 				empty.remove();
 			}
-
+            calcTotal();
 		});
 
 
@@ -97,6 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
     	prices.forEach(function (item) {
 			total += +item.textContent;
         });
+    	totalCost.textContent = total;
 	}
 
 
