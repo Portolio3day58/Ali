@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		let counter = 100;
 		const id = setInterval(frame, 10);
 		function frame() {
-			if (counter == 10) {
+			if ( counter == 10) {
 				clearInterval(id);
                 confirm.style.display = 'none';
             } else {
