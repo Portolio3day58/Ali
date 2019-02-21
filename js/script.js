@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			trigger.remove();
 
-           // showConfirm();
+           showConfirm();
             //calcGoods(1);
 
 			removeBtn.classList.add('goods__item-remove');
