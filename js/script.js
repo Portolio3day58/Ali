@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger.remove();
 
            showConfirm();
-          // calcGoods(1);
+           calcGoods(1);
 
 			removeBtn.classList.add('goods__item-remove');
 			removeBtn.innerHTML = '&times';
@@ -81,7 +81,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-
 	function calcGoods(i) {
 
 		const items = cartWrapper.querySelectorAll('.goods__item');
@@ -90,6 +89,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 	function calcTotal() {
+		
 		const prices = document.querySelectorAll('.cart__wrapper > .goods__tem > .goods__price > span');
     	let total = 0;
     	prices.forEach(function (item) {
