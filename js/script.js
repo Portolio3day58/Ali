@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		open = document.querySelector('#cart'),
 		goodsBtn = document.querySelectorAll('.goods__btn'),
 		products = document.querySelectorAll('.goods__item'),
-		confirm = document.querySelector('.confirm'),
+		confirm1 = document.querySelector('.confirm'),
 		badge= document.querySelector('.nav__bage'),
 		totalCost = document.querySelector('.cart__total > span'),
 		titles = document.querySelectorAll('.goods__title');
@@ -65,18 +65,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	function showConfirm() {
-		confirm.style.display = 'block';
+		confirm1.style.display = 'block';
 		let counter = 100;
 		const id = setInterval(frame, 10);
 		function frame() {
 			if ( counter == 10) {
 				clearInterval(id);
-                confirm.style.display = 'none';
+                confirm1.style.display = 'none';
             } else {
                 counter--;
                 
-                confirm.style.transform = `translateY(-${counter}px)`;
-				confirm.style.opacity = '.' + counter;
+                confirm1.style.transform = `translateY(-${counter}px)`;
+				confirm1.style.opacity = '.' + counter;
             }
         }
     }
