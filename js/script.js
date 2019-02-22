@@ -47,8 +47,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
             calcTotal();
 		});
-
-
 	});
 
 	function sliceTitle() {
@@ -84,10 +82,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
 
-	function calcGoods(a) {
+	function calcGoods(i) {
 
 		const items = cartWrapper.querySelectorAll('.goods__item');
-		badge.textContent = a + items.length;
+		badge.textContent = i + items.length;
 
     }
 
